@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Public+Sans:wght@500;700&family=Roboto:wght@700&family=Work+Sans:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+     <h1>Intake Main Flow</h1>
+     <div><span>*</span> Mandatory field</div>
+     <h2>Information</h2>
+     <div class="content">
+        <div class="group">
+          <label for="intake">Intake Type<span>* (select)</span> </label><br>
+          <input type="text" id="intake" value="Refferal" required>
+        </div>
+        <div class="group">
+          <label for="date">Enrollment Initiation Date jquery</label>
+          <input type="date" id="date" placeholder="05/11/2011" >
+        </div>
+    </div>
+    <div class="content">
+        <div class="group">
+          <label for="phone">phone</label>
+          <input type="tel" id="phone">
+        </div>
+        <div class="group">
+          <label for="category">Application Category<span>*</span></label>
+          <input type="text" id="category" required list="list-category">
+          <datalist id="list-category">
+            <option value="Child support">Child support</option>
+            <option value="Child support">Child support</option> 
+            <option value="Child support">Child support</option>  
+          </datalist>
+        </div>   
+    </div>
+    <div class="content">
+        <div class="group">
+          <label for="email">email</label>
+          <input type="text" id="email">
+        </div>
+        <div class="group">
+          <label for="sub-date">Enrollment Submission Date (Optional)</label>
+          <input type="date" id="sub-date" placeholder="05/11/2011" class="date">
+        </div>
+    </div>
+    <div class="content">
+        <div class="group">
+        <label for="reg">Application Registration (Optional)</label>
+        <input type="text" id="reg" list="list-reg" value="APP0000116" class="text">
+        <datalist id="list-reg">
+            <option value="APP0000116">APP0000116</option>
+            <option value="APP0000116">APP0000116</option> 
+            <option value="APP0000116">APP0000116</option>  
+          </datalist> 
+        </div>
+    </div>
+    <div class="content">
+        <div class="group">
+          <label for="add-info">Additional Information Requested Date (Optional)</label>
+          <input type="text" id="add-info" value="05-13-2021" class="date">
+        </div>
+        <div class="group">
+          <input type="checkbox" id="Purged">
+          <label for="Purged">Purged</label>
+          </div>
+    </div>
+    <div class="content">
+        <div class="group">
+          <label for="days">Remaining Days Before Referral is Purged (Optional)</label>
+          <input type="number" id="days" value="13">
+        </div>
+        <div class="group">
+          <label for="paternity">Exempt from Paternity (Optional)   (select)</label>
+          <input type="text" id="paternity" list="list-paternity" value="No">
+          <datalist id="list-paternity">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option> 
+            </datalist>
+        </div>   
+    </div>
+    <div class="content">
+        <div class="group">
+          <label for="fee">Fee Payment Date (Optional)</label>
+          <input type="date" id="fee" value="05/13/2021" class="date">
+        </div>
+        <div class="group">
+          <label for="status">Enrollment Status (Optional)</label>
+          <input type="text" id="status" list="list-status" value="Worklisted">
+          <datalist id="list-status">
+            <option value="Worklisted">Worklisted</option>
+            <option value="Worklisted">Worklisted</option> 
+            </datalist>
+        </div>   
+    </div>
+    <div class="content">
+        <div class="group checkbox">
+            <input type="checkbox" id="app">
+            <label for="app">Application Fee Processed</label>
+        </div>
+    </div>
+    <div class="content">
+        <div class="line">
+        </div>
+    </div>
+    <h2>Maternity Information</h2>
+    <div class="content">
+        <div class="group">
+            <input type="checkbox" id="service">
+            <label for="service">Are you requesting child support services for an
+                unborn child?</label>
+        </div>
+        <div class="group">
+          <label for="bio">Other known biological parent? (Optional)</label>
+          <input type="text" id="bio" list="list-bio" value="None">
+          <datalist id="list-bio">
+            <option value="None">None</option>
+            <option value="None">None</option> 
+            </datalist>
+        </div>   
+    </div>
+    <div class="content">
+        <div class="line">
+        </div>
+    </div>
+    <h2>Official Use</h2>
+    <div class="content">
+        <div class="group">
+            <label for="case">Case Category (select)</label>
+            <input type="text" id="case" list="list-case" value="Active IV-A">
+            <datalist id="list-case">
+              <option value="Active IV-A">Active IV-A</option>
+              <option value="Active IV-B">Active IV-B</option> 
+              </datalist>
+        </div>
+        <div class="group">
+          <label for="iv">IV-D Indicator<span>*</span></label>
+          <input type="text" id="iv" list="list-iv" value="Non-IV-D">
+          <datalist id="list-iv">
+            <option value="Non-IV-D">Non-IV-D</option>
+            <option value="Non-IV-B">Non-IV-B</option> 
+            </datalist>
+        </div>   
+    </div>
+    <div class="content">
+        <div class="group">
+            <label for="arr">Arrears Only Indicator (Optional)</label>
+            <input type="text" id="arr" list="list-arr" placeholder="None">
+            <datalist id="list-arr">
+              <option value="None">None</option>
+              <option value="Yes">Yes</option> 
+              </datalist>
+        </div>
+        <div class="group">
+          <label for="inter">Intergovernmental Case Category (Optional)</label>
+          <input type="text" id="inter" list="list-inter" placeholder="None">
+          <datalist id="list-inter">
+            <option value="None">None</option>
+            <option value="Yes">Yes</option>
+            </datalist>
+        </div>   
+    </div>
+    <div class="content">
+        <div class="group">
+            <label for="ass">Assigned County of Ownership (Optional)</label>
+            <input type="text" id="ass" list="list-ass" placeholder="None">
+            <datalist id="list-ass">
+              <option value="None">None</option>
+              <option value="Yes">Yes</option> 
+              </datalist>
+        </div>
+        <div class="group">
+          <label for="inter-type">Intergovernmental Case Type (Optional)</label>
+          <input type="text" id="inter-type" list="list-inter-type" placeholder="None">
+          <datalist id="list-inter-type">
+            <option value="None">None</option>
+            <option value="Yes">Yes</option>
+            </datalist>
+        </div>   
+    </div>
+    <div class="content">
+        <div class="group">
+            <label for="inter-case">Intergovermental Case Status (details)</label>
+            <input type="text" id="inter-case" list="list-inter-case" placeholder="None">
+            <datalist id="list-inter-case">
+              <option value="None">None</option>
+              <option value="Yes">Yes</option> 
+              </datalist>
+        </div>
+        <div class="group search">
+            <!--background-->
+          <label for="case-number">Case Number</label>
+          <input type="search" id="case-number" placeholder="Search Case Number">
+          </div>  
+          <!--search--> 
+    </div>
+    <div class="content">
+        <div class="group">
+            <label for="indicator">Special Handling Indicator for Applicant (Optional)</label>
+            <input type="text" id="indicator" list="list-indicator" placeholder="None">
+            <datalist id="list-indicator">
+              <option value="None">None</option>
+              <option value="Yes">Yes</option> 
+              </datalist>
+        </div>
+        <div class="group search">
+            <!--background-->
+          <label for="ref-number">Referral Number</label>
+          <input type="search" id="ref-number" placeholder="Search Referral Number">
+          </div>  
+          <!--search--> 
+    </div>
+    <div class="content">
+        <div class="group">
+            <label for="indicator-other">Special Handling Indicator for Other Parent
+                (Optional)</label>
+            <input type="text" id="indicator-other" list="list-indicator-other" placeholder="None">
+            <datalist id="list-indicator-other">
+              <option value="None">None</option>
+              <option value="Yes">Yes</option> 
+              </datalist>
+        </div>
+    </div>
+    <div class="content">
+        <div class="line">
+        </div>
+    </div>
+    <h2>System Information</h2>
+    <div class="content">
+        <div class="group search">
+            <!--background-->
+          <label for="enroll">Enrollment Taken by User</label>
+          <input type="search" id="enroll" value="Search Input">
+          </div>  
+          <!--search-->
+        <div class="group search">
+            <!--background-->
+          <label for="intake">Intake Supervisor (Optional)</label>
+          <input type="search" id="intake" placeholder="Search">
+          </div>  
+          <!--search--> 
+    </div>
+    <div class="content">
+        <div class="group search">
+            <!--background-->
+          <label for="worker">Worker (Optional)</label>
+          <input type="search" id="worker" value="Search Input">
+          </div>  
+          <!--search-->
+        <div class="group search">
+            <!--background-->
+          <label for="owner">Owner (Optional)</label>
+          <input type="search" id="owner" value="Rajaneesh Banal" class="text">
+          </div>  
+          <!--search--> 
+    </div>
+    <div class="content">
+        <div class="line">
+        </div>
+    </div>
+    <div class="button">
+        <button type="submit">Next</button>
+    </div>
+   </div>
+</body>
+</html>

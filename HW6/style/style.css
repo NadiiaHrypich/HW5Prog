@@ -1,0 +1,48 @@
+.main {
+    margin: 60px 48px;
+    min-width: 700px;
+    max-width: 1000px;
+    font-family: 'Public Sans';
+    color:#171717;
+}
+
+span {
+    color: red;
+}
+
+.group {
+    display: inline-block;
+    margin: 20px 0;
+    padding-right: 8px;
+    box-sizing: border-box;
+    width: 46%;
+    }
+
+    input {
+     padding-top: 8px;
+      width: 100%;  
+    }
+
+.line {
+    border-top: 1px solid #D1D1D1;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+        
+}
+
+.text {
+    color: #0050D8;
+}
+
+.date {
+    text-align: center;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+}
